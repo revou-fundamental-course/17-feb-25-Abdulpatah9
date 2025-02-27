@@ -1,0 +1,189 @@
+/* Abdul Patah
+/* Media Query untuk Tablet (≤ 768px) */
+@media screen and (max-width: 768px) {
+    /* CSS untuk tablet di sini */
+}
+
+/* Media Query untuk Smartphone (≤ 480px) */
+@media screen and (max-width: 480px) {
+    /* CSS untuk smartphone di sini */
+}
+
+html {
+    scroll-behavior: smooth; /* Mengatur agar scroll halaman berjalan dengan halus */
+}
+body {
+    font-family: Arial, sans-serif; /* Mengatur jenis font utama */
+    margin: 0; /* Menghilangkan margin default */
+    padding: 0; /* Menghilangkan padding default */
+    box-sizing: border-box; /* Memastikan padding dan border dimasukkan dalam ukuran elemen */
+}
+header {
+    padding: 5px 70px; /* Mengatur padding header */
+    display: flex; /* Mengatur tata letak flexbox */
+    justify-content: space-around; /* Menyusun konten dengan jarak yang merata */
+    align-items: center; /* Mengatur konten agar selaras di tengah secara vertikal */
+    border-bottom: 1px solid #ddd; /* Menambahkan garis bawah */
+    background-size: cover; /* Mengatur latar belakang agar menutupi seluruh area */
+}
+.logo-space {
+    display: flex; /* Mengatur tata letak flexbox */
+    width: 50%; /* Mengatur lebar elemen logo */
+    padding: 15px 20px; /* Mengatur padding logo */
+}
+.logo-image {
+    width: 45%; /* Mengatur lebar gambar logo */
+}
+.navbar {
+    display: flex; /* Mengatur tata letak flexbox */
+    justify-content: center; /* Mengatur navigasi agar berada di tengah */
+    align-items: center; /* Mengatur navigasi agar berada di tengah secara vertikal */
+    padding: 15px 20px; /* Mengatur padding navbar */
+}
+.nav-link {
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    padding: 10px 20px; /* Mengatur padding pada tautan */
+    border: 1px solid #ccc; /* Menambahkan garis border */
+    color: black; /* Mengatur warna teks */
+    background: white; /* Mengatur warna latar belakang */
+    cursor: pointer; /* Mengatur bentuk kursor saat diarahkan ke tautan */
+    border-right: none; /* Menghilangkan garis border sebelah kanan */
+    transition: background 0.3s; /* Menambahkan efek transisi saat latar belakang berubah */
+}
+.nav-link:hover {
+    background: #ddd; /* Mengatur warna latar belakang saat tautan di-hover */
+}
+.nav-link:first-child {
+    border-top-left-radius: 5px; /* Menambahkan radius sudut kiri atas */
+    border-bottom-left-radius: 5px; /* Menambahkan radius sudut kiri bawah */
+}
+.nav-link:last-child {
+    border-right: 1px solid #ccc; /* Menambahkan garis border sebelah kanan */
+    border-top-right-radius: 5px; /* Menambahkan radius sudut kanan atas */
+    border-bottom-right-radius: 5px; /* Menambahkan radius sudut kanan bawah */
+}
+main {
+    padding: 50px 20px; /* Mengatur padding utama */
+    box-sizing: border-box; /* Memastikan padding dan border dimasukkan dalam ukuran elemen */
+}
+h1, p {
+    text-align: center; /* Mengatur teks agar berada di tengah */
+}
+.content {
+    display: flex; /* Mengatur tata letak flexbox */
+    justify-content: space-between; /* Mengatur jarak antara elemen */
+    align-items: flex-start; /* Mengatur elemen agar berada di awal secara vertikal */
+    padding: 20px; /* Mengatur padding konten */
+    max-width: 1000px; /* Mengatur lebar maksimal konten */
+    margin: auto; /* Mengatur margin agar elemen berada di tengah */
+}
+.image-placeholder {
+    position: relative; /* Mengatur posisi relatif */
+    width: 70%; /* Mengatur lebar elemen */
+    display: flex; /* Mengatur tata letak flexbox */
+    overflow: hidden; /* Mengatur overflow agar tersembunyi */
+    white-space: nowrap; /* Mengatur whitespace agar tidak terputus */
+}
+.image-slide {
+    width: 100%; /* Mengatur lebar elemen */
+    flex-shrink: 0; /* Mengatur elemen agar tidak mengecil */
+    text-align: center; /* Mengatur teks agar berada di tengah */
+    transition: transform 0.5s ease-in-out; /* Menambahkan efek transisi pada transformasi */
+}
+img {
+    border-radius: 5px; /* Menambahkan radius pada gambar */
+}
+.testimonial {
+    display: flex; /* Mengatur tata letak flexbox */
+    margin-block-start: 1em; /* Mengatur margin block awal */
+    margin-block-end: 1em; /* Mengatur margin block akhir */
+    margin-inline-start: 40px; /* Mengatur margin inline awal */
+    margin-inline-end: 40px; /* Mengatur margin inline akhir */
+}
+.profile-image {
+    width: 50px; /* Mengatur lebar gambar profil */
+    height: 50px; /* Mengatur tinggi gambar profil */
+    border-radius: 50%; /* Menambahkan radius agar gambar menjadi bulat */
+    background: #ccc; /* Mengatur warna latar belakang */
+    display: block; /* Mengatur display menjadi block */
+    margin: 10px 20px; /* Mengatur margin gambar profil */
+    overflow: hidden; /* Mengatur overflow agar tersembunyi */
+}
+.profile-image img {
+    width: 100%; /* Mengatur lebar gambar agar 100% */
+    height: 100%; /* Mengatur tinggi gambar agar 100% */
+    object-fit: cover; /* Mengatur gambar agar sesuai dengan kontainer */
+}
+.profile-name {
+    text-align: left; /* Mengatur teks agar berada di kiri */
+}
+.contact-form {
+    width: 30%; /* Mengatur lebar form kontak */
+    padding: 50px; /* Mengatur padding form kontak */
+    border-radius: 5px; /* Menambahkan radius pada form kontak */
+    background: #f8f8f8; /* Mengatur warna latar belakang */
+    background-size: cover; /* Mengatur latar belakang agar menutupi seluruh area */
+    background-position: center; /* Mengatur posisi latar belakang agar berada di tengah */
+    position: relative; /* Mengatur posisi relatif */
+}
+.contact-form h4 {
+    font-size: 20px; /* Mengatur ukuran font */
+    margin-bottom: 10px; /* Mengatur margin bawah */
+    color: rgb(51, 51, 51); /* Mengatur warna teks */
+}
+.contact-form p {
+    font-size: 14px; /* Mengatur ukuran font */
+    color: grey; /* Mengatur warna teks */
+    margin-bottom: 70px; /* Mengatur margin bawah */
+    text-align: left; /* Mengatur teks agar berada di kiri */
+}
+label {
+    font-size: 13px; /* Mengatur ukuran font */
+    color: rgb(51, 51, 51); /* Mengatur warna teks */
+}
+.contact-form input, .contact-form select, .contact-form button {
+    width: 100%; /* Mengatur lebar elemen form */
+    padding: 15px; /* Mengatur padding elemen form */
+    margin-top: 6px; /* Mengatur margin atas */
+    margin-bottom: 15px; /* Mengatur margin bawah */
+    display: block; /* Mengatur display menjadi block */
+    border: 3px solid #d3d3d3; /* Mengatur border */
+    border-radius: 7px; /* Menambahkan radius */
+    font-size: 16px; /* Mengatur ukuran font */
+    box-sizing: border-box; /* Memastikan padding dan border dimasukkan dalam ukuran elemen */
+}
+.contact-form button {
+    background: black; /* Mengatur warna latar belakang */
+    color: white; /* Mengatur warna teks */
+    margin-top: 35px; /* Mengatur margin atas */
+    cursor: pointer; /* Mengatur bentuk kursor */
+    border: none; /* Menghilangkan border */
+}
+.contact-form button:hover {
+    background-color: green; /* Mengatur warna latar belakang saat di-hover */
+}
+.error-message {
+    color: red; /* Mengatur warna teks */
+    font-size: 12px; /* Mengatur ukuran font */
+    display: block; /* Mengatur display menjadi block */
+    margin-bottom: 10px; /* Mengatur margin bawah */
+}
+.package-section {
+    background: #f3f3f3; /* Mengatur warna latar belakang */
+    padding: 50px 20px; /* Mengatur padding */
+    text-align: center; /* Mengatur teks agar berada di tengah */
+}
+.package-list {
+    display: flex; /* Mengatur tata letak flexbox */
+    flex-wrap: wrap; /* Mengatur elemen agar dapat membungkus */
+    justify-content: center; /* Mengatur elemen agar berada di tengah */
+}
+.package {
+    width: 30%; /* Mengatur lebar elemen */
+    padding: 20px; /* Mengatur padding elemen */
+    margin: 17px; /* Mengatur margin elemen */
+    border-radius: 5px; /* Menambahkan radius */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Menambahkan shadow */
+    color: white; /* Mengatur warna teks */
+    cursor: pointer; /* Mengatur bentuk kursor */
+}

@@ -1,11 +1,156 @@
+<!--Abdul Patah-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8"> <!-- Menentukan karakter encoding untuk dokumen HTML -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mengatur tampilan agar responsif pada perangkat -->
+    <title>CoffeIT</title> <!-- Judul halaman -->
+    <link rel="stylesheet" href="css\styles.css"> <!-- Menghubungkan ke file CSS eksternal -->
 </head>
 <body>
-    
+    <header style="background-image: url('assets/banner-coffe.jpg');"> <!-- Header dengan latar belakang gambar -->
+        <div class="logo-space">
+            <img class="logo-image" src="assets\Logo-coffeit.png"> <!-- Logo CoffeIT -->
+        </div>
+        <nav class="navbar">
+            <a href="#beranda" class="nav-link">Intro</a> <!-- Tautan navigasi ke beranda -->
+            <a href="#menu" class="nav-link">Menu Coffe</a> <!-- Tautan navigasi ke menu kopi -->
+            <a href="#kontak" class="nav-link">Kontak kami</a> <!-- Tautan navigasi ke kontak -->
+        </nav>
+    </header>
+
+    <main id="beranda">
+        <h1>Selamat datang di Coffeit! ☕</h1> <!-- Judul utama halaman beranda -->
+        <p>"Mulailah hari Anda dengan semangat, seruput kopi untuk energi tanpa batas!"</p> <!-- Kutipan motivasi kopi -->
+        
+        <div class="content">
+            
+            <div class="image-placeholder">
+                <div class="image-slide">
+                    <img src="assets\cafeit-bg-01.jpg" width="80%" alt="Placeholder Image"> <!-- Gambar slide pertama -->
+                    <blockquote>"Hidup dan matiku hanya coffe."</blockquote> <!-- Kutipan pertama -->
+                    <div class="testimonial">
+                        <div class="profile-image">
+                            <img src="assets\profile1.jpg" alt="Foto Profil"> <!-- Gambar profil pertama -->
+                        </div>
+                        <p class="profile-name"><strong>Bianca</strong><br><i>Karyawan, 28</i></p> <!-- Nama dan deskripsi profil pertama -->
+                    </div>
+                </div>
+
+                <div class="image-slide">
+                    <img src="assets\cafeit-bg-02.jpg" width="80%" alt="Placeholder Image"> <!-- Gambar slide kedua -->
+                    <blockquote>"Kopi itu energi tanpa batas!"</blockquote> <!-- Kutipan kedua -->
+                    <div class="testimonial">
+                        <div class="profile-image">
+                            <img src="assets\profile2.jpg" alt="Foto Profil"> <!-- Gambar profil kedua -->
+                        </div>
+                        <p class="profile-name"><strong>Atenk Swalyou</strong><br><i>Karyawan, 29</i></p> <!-- Nama dan deskripsi profil kedua -->
+                    </div>
+                </div>
+
+                <div class="image-slide">
+                    <img src="assets\cafeit-bg-03.jpg" width="80%" alt="Placeholder Image"> <!-- Gambar slide ketiga -->
+                    <blockquote>"saya paling gabisa kalo gak minum kopi!."</blockquote> <!-- Kutipan ketiga -->
+                    <div class="testimonial">
+                        <div class="profile-image">
+                            <img src="assets\profile3.jpg" alt="Foto Profil"> <!-- Gambar profil ketiga -->
+                        </div>
+                        <p class="profile-name"><strong>Abdul Patah</strong><br><i>Mahasiswa, 25</i></p> <!-- Nama dan deskripsi profil ketiga -->
+                    </div>
+                </div>
+
+                <div class="image-slide">
+                    <img src="assets\cafeit-bg-04.jpg" width="80%" alt="Placeholder Image"> <!-- Gambar slide keempat -->
+                    <blockquote>"HEEEEES."</blockquote> <!-- Kutipan keempat -->
+                    <div class="testimonial">
+                        <div class="profile-image">
+                            <img src="assets\profile3.jpg" alt="Foto Profil"> <!-- Gambar profil keempat -->
+                        </div>
+                        <p class="profile-name"><strong>Abdul Patah</strong><br><i>Mahasiswa, 25</i></p> <!-- Nama dan deskripsi profil keempat -->
+                    </div>
+                </div>
+
+            <div id="kontak" class="contact-form" style="background-image: url('assets/kontak-form.jpg');"> <!-- Form kontak dengan latar belakang gambar -->
+                <h4>Kontak Kami</h4> <!-- Judul form kontak -->
+                <p></p>
+
+                <label><b>Nama:</b></label> <!-- Label untuk input nama -->
+                <input type="text" id="name" placeholder="First and last name"> <!-- Input untuk nama -->
+                <span id="error-name" class="error-message"></span>
+                
+                <label><b>Email:</b></label> <!-- Label untuk input email -->
+                <input type="email" id="email" placeholder="example@email.com"> <!-- Input untuk email -->
+                <span id="error-email" class="error-message"></span>
+
+                <label><b>Mau ngopi apa hari ini?</b></label> <!-- Label untuk pilihan kopi -->
+                <select id="pilihmenu">
+                    <option value="">Pilihan Coffe</option> <!-- Opsi pilihan kopi -->
+                    <option value="cappuccino">Cappuccino Panas</option>
+                    <option value="americano">Americano Panas</option>
+                    <option value="latte">Latte Susu Panas</option>
+                    <option value="cappuccino-es">Cappuccino Es</option>
+                    <option value="americano-es">Americano Es</option>
+                    <option value="latte-es">Latte Susu Es</option>
+                </select>
+                <span id="error-pilihmenu" class="error-message"></span>
+
+                <button id="send-btn"><b>KIRIM</b></button> <!-- Tombol kirim -->
+            </div>
+
+        </div>
+    </main>
+
+    <section id="menu" class="package-section">
+        <h2>Menu CoffeIT</h2> <!-- Judul seksi menu -->
+        <div class="package-list">
+            <div class="package" style="background-image: url('assets/menu-item-1.jpg');"> <!-- Gambar item menu pertama -->
+                <h4>Cappuccino Panas</h4> <!-- Nama menu pertama -->
+                <p></p>
+            </div>
+
+            <div class="package" style="background-image: url('assets/menu-item-2.jpg');"> <!-- Gambar item menu kedua -->
+                <h4>Americano Panas</h4> <!-- Nama menu kedua -->
+                <p></p>
+            </div>
+            
+            <div class="package" style="background-image: url('assets/menu-item-3.jpg');"> <!-- Gambar item menu ketiga -->
+                <h4>Latte Susu Panas</h4> <!-- Nama menu ketiga -->
+                <p></p>
+            </div>
+            
+            <div class="package" style="background-image: url('assets/menu-item-4.jpg');"> <!-- Gambar item menu keempat -->
+                <h4>Cappuccino Es</h4> <!-- Nama menu keempat -->
+                <p></p>
+            </div>
+            
+            <div class="package" style="background-image: url('assets/menu-item-5.jpg');"> <!-- Gambar item menu kelima -->
+                <h4>Americano Es</h4> <!-- Nama menu kelima -->
+                <p></p>
+            </div>
+            <div class="package" style="background-image: url('assets/menu-item-6.jpg');"> <!-- Gambar item menu keenam -->
+                <h4>Latte Susu Es</h4> <!-- Nama menu keenam -->
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="kontak">
+        <h2>Tentang Coffeit ☕</h2> <!-- Judul bagian footer -->
+        <p>Di Coffeit, kami percaya bahwa setiap cangkir kopi memiliki cerita unik.
+            Kami hadir untuk menghadirkan kopi terbaik yang memberi energi dan semangat
+            untuk menjalani hari Anda. Mulailah hari Anda dengan semangat,
+            seruput kopi untuk energi tanpa batas! ☕✨</p> <!-- Deskripsi tentang Coffeit -->
+        <a href="#kontak" class="cta-button"><b>Pesan Sekarang</b></a> <!-- Tombol ajakan untuk memesan -->
+    </footer>
+
+    <div class="copyright">
+        <div class="copyright-logo">
+            <img src="assets\logo-coffeit.png"> <!-- Logo Coffeit pada bagian hak cipta -->
+        </div>
+        <p><a href="#Terms-of-Service">Terms of Service</a> | <a href="#Privacy-Policy">Privacy Policy</a></p> <!-- Tautan kebijakan dan layanan -->
+        <p>&copy; 2025 AbdulPatah</p> <!-- Informasi hak cipta -->
+    </div>
+
+    <script src="js\script.js"></script> <!-- Menghubungkan ke file JavaScript eksternal -->
 </body>
 </html>
